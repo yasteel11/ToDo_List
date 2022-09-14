@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.app {
+  padding: 60px;
+  height:950px;
+  font-family: 'Luckiest Guy', cursive;
+  background: rgb(63,251,97);
+background: linear-gradient(90deg, rgba(20,223,231,1), rgba(63,251,97,1), rgb(20, 152, 175)  100%);
+background-size: 600% 100%;
+animation: gradient 10s linear infinite;
+animation-direction: alternate;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  font-family: 'Luckiest Guy';
+}
+
+.container{
   color: white;
+  font-family: 'Luckiest Guy';
 }
 
-.App-link {
-  color: #61dafb;
+.cards{
+  color: black;
+  padding: 80px;
+  font-family: 'Luckiest Guy';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
